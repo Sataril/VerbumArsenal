@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dw0gcq4tw78t1"]
+
+[ext_resource type="Script" uid="uid://di73rmshf73ce" path="res://Scene/knock_back.gd" id="1_xgapk"]
+
+[node name="KnockBack" type="Node2D"]
+script = ExtResource("1_xgapk")
+
+[node name="Timer" type="Timer" parent="."]
