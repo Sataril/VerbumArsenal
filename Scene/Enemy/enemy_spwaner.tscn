@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctg2s2qwvki1t"]
+
+[ext_resource type="Script" uid="uid://0uljb2l27h7p" path="res://Scene/Enemy/enemy_spwaner.gd" id="1_rk8v5"]
+[ext_resource type="PackedScene" uid="uid://ccosorhqjxga2" path="res://Scene/Enemy/耄耋.tscn" id="2_ua7tp"]
+
+[node name="EnemySpwaner" type="Node2D"]
+script = ExtResource("1_rk8v5")
+enemy_scene = ExtResource("2_ua7tp")
+
+[node name="Timer" type="Timer" parent="."]

@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://2u31jxwfaf30"]
+
+[ext_resource type="Script" uid="uid://d2a7v27ni2wr6" path="res://Scene/UI/start_screen.gd" id="1_hg8n5"]
+[ext_resource type="Texture2D" uid="uid://cjyu0p6lkutdq" path="res://Assets/Items/StartBackground.png" id="2_r6d26"]
+
+[sub_resource type="SystemFont" id="SystemFont_r6d26"]
+
+[node name="StartScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hg8n5")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 10.0
+offset_right = 132.0
+offset_bottom = 126.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_r6d26")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -49.0
+offset_right = 200.0
+offset_bottom = 1.0
+grow_vertical = 0
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_r6d26")
+theme_override_font_sizes/font_size = 32
+text = "Version BETA"
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 50.0
+offset_right = 86.0
+offset_bottom = 58.0
+text = "开始游戏"
